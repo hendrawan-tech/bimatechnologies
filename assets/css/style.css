@@ -98,8 +98,10 @@
 }
 
 .about,
-.service {
-  padding: 120px 0px;
+.service,
+.contact-us,
+.detail {
+  padding-top: 120px;
 }
 
 .about h3 {
@@ -155,6 +157,176 @@
   margin-bottom: 20px;
 }
 
+.contact-us {
+  background-color: var(--secondary-color);
+}
+
+.contact-us .menu {
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  left: 40px;
+  top: 140px;
+}
+
+.contact-us .image {
+  width: 60%;
+  height: 88vh;
+  margin-top: -4px;
+}
+
+.contact-us img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-us .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 0px 100px;
+}
+
+.contact-us .content h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: white;
+  font-size: 70px;
+}
+
+.contact-us .content h5 {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  margin: 10px 0;
+  color: white;
+  font-size: 50px;
+}
+
+.contact-us .content button {
+  width: max-content;
+  margin-top: 20px;
+  font-size: 40px;
+  padding: 10px 90px;
+  font-family: 'Montserrat';
+  color: white;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.project {
+  padding-top: 120px !important;
+  background-color: var(--secondary-color);
+  padding: 40px;
+}
+
+.project .menu {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.project .product {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.project .product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project .row > div:nth-child(2n + 2) {
+  margin-top: -72px;
+}
+
+.project .row > div:nth-child(2n + 4) {
+  margin-top: -72px;
+}
+
+.customer {
+  padding-top: 120px !important;
+  padding: 40px;
+}
+
+.customer .menu {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.customer .product {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.customer .product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customer .row > div:nth-child(2n + 2) {
+  margin-top: -72px;
+}
+
+.customer .row > div:nth-child(2n + 4) {
+  margin-top: -72px;
+}
+
+.inner-detail {
+  display: flex;
+}
+
+.detail .menu {
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  left: 40px;
+  top: 140px;
+}
+
+.detail .image {
+  width: 70%;
+  height: 88vh;
+  margin-top: -4px;
+}
+
+.detail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+  padding: 0px 100px;
+}
+
+.detail .content h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.detail .content p {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  margin: 10px 0;
+}
+
 footer .content {
   background-image: url(../images/banner.png);
   height: 600px;
@@ -163,6 +335,7 @@ footer .content {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 footer .content h3 {
@@ -178,7 +351,7 @@ footer .contact {
 }
 
 footer .contact h5 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-weight: bold;
   font-family: 'Montserrat';
   color: var(--grey-color);
@@ -188,4 +361,184 @@ footer .contact p,
 footer .contact p b {
   font-family: 'Montserrat';
   color: var(--grey-color);
+}
+
+/* mobile */
+
+@media (max-width: 756px) {
+  .navbar {
+    background-color: var(--primary-color) !important;
+    position: fixed;
+  }
+
+  .navbar .search input {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .navbar .search img {
+    right: 110px;
+    top: 20px;
+  }
+
+  .navbar .cs {
+    width: 45px;
+    height: 35px;
+    margin-top: 10px !important;
+    position: absolute;
+    right: 22px;
+    z-index: 1;
+    bottom: 22px;
+  }
+
+  .header {
+    padding-top: 80px;
+  }
+
+  .header .carousel-inner {
+    height: 400px;
+  }
+
+  .header .carousel-item img {
+    height: 400px;
+  }
+
+  .navbar-brand img {
+    height: 25px;
+  }
+
+  .navbar-toggler {
+    border-color: white !important;
+  }
+
+  .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+  }
+
+  .nav-link {
+    color: white !important;
+  }
+
+  .about h3 {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+
+  .service h3 {
+    font-size: 40px;
+  }
+
+  .service .item {
+    margin-top: 20px;
+    min-height: 500px;
+    background-size: cover;
+  }
+
+  .service .item h4 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .service .item:hover button {
+    margin-bottom: 20px;
+  }
+
+  .contact-us .image {
+    display: none;
+  }
+
+  .contact-us {
+    height: 800px;
+  }
+
+  .contact-us .content {
+    padding: 0px;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .contact-us .content h3 {
+    font-size: 50px;
+  }
+
+  .contact-us .content h5 {
+    font-size: 30px;
+  }
+
+  .contact-us .menu {
+    top: 120px;
+  }
+
+  .contact-us .content button {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px !important;
+  }
+
+  .project .menu {
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .project .row > div:nth-child(2n + 2) {
+    margin-top: 0px;
+  }
+
+  .project .row > div:nth-child(2n + 4) {
+    margin-top: 0px;
+  }
+
+  .detail {
+    padding-top: 80px;
+  }
+
+  .inner-detail {
+    display: block;
+  }
+
+  .detail .menu {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    left: 20px;
+    top: 100px;
+  }
+
+  .detail .image {
+    width: 100%;
+    height: 400px;
+    margin-top: -4px;
+  }
+
+  .detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .detail .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 20px;
+  }
+
+  footer .content {
+    background-image: url(../images/banner.png);
+    height: 250px;
+    margin-top: 80px;
+  }
+
+  footer .content h3 {
+    font-size: 50px;
+  }
+
+  footer .contact h5 {
+    margin-top: 30px;
+  }
 }
