@@ -396,11 +396,11 @@ footer .contact p b {
   }
 
   .header .carousel-inner {
-    height: 400px;
+    height: auto;
   }
 
   .header .carousel-item img {
-    height: 400px;
+    height: 100%;
   }
 
   .navbar-brand img {
@@ -417,6 +417,10 @@ footer .contact p b {
 
   .nav-link {
     color: white !important;
+  }
+
+  .about {
+    padding-top: 40px;
   }
 
   .about h3 {
